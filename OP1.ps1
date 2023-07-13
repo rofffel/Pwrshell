@@ -1,4 +1,4 @@
-$file = 'c:\Users\Rapha\OneDrive\School - Goed\!Leerjaar 3\Powershell\test.ps1'
+$file = 'c:\Users\Rapha\OneDrive\School - Goed\!Leerjaar 3\Powershell\test.ps1' #change to the directory you want to check
 if (-not(Test-Path -Path $file -PathType Leaf)) {
     try {
         $null = New-Item -ItemType File -Path $file -Force -ErrorAction Stop
